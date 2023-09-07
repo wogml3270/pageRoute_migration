@@ -1,0 +1,88 @@
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 1.25rem 0;
+    }
+
+    .subTitle {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+
+    .inputBox {
+        margin: 2rem 0;
+        display: flex;
+        gap: 1rem;
+
+        & input {
+            width: 10rem;
+            padding: 0.25rem 0.5rem;
+            border: 2px solid #cccccc;
+            border-radius: 5px;
+
+            &:focus {
+                border: 2px solid #fccffc;
+            }
+        }
+
+        & button {
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            background: #777777;
+            color: #ffffff;
+
+            &:hover {
+                background: #111111;
+            }
+        }
+    }
+
+    & .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 2rem;
+
+        & h3 {
+            color: #909090;
+        }
+
+        & p {
+            width: 15rem;
+            text-align: center;
+            padding: 2.5rem;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+    }
+
+    & .routeButton {
+        display: flex;
+        gap: 10px;
+
+        & .route {
+            padding: 0.5rem;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            background: #6c76f9;
+
+            &:hover {
+                background: #000ccc;
+            }
+
+            & button {
+                color: #ffffff;
+            }
+        }
+    }
+}
